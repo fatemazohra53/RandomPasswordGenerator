@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E5E5"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/password_generaotr"
+        android:layout_width="179dp"
+        android:layout_height="60dp"
+        android:background="#A9B3A5"
+        android:text="Generate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <CheckBox
+        android:id="@+id/chk2"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="120dp"
+        android:background="#AEF3F0F0"
+        android:buttonTint="#DA000000"
+        android:text="Lower Case"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/chk1"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+    <CheckBox
+        android:id="@+id/chk3"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:background="#AEF3F0F0"
+        android:buttonTint="#DA000000"
+        android:text="Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk1" />
+
+    <CheckBox
+        android:id="@+id/chk4"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:background="#AEF3F0F0"
+        android:buttonTint="#DA000000"
+        android:text="Symbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/chk3"
+        app:layout_constraintTop_toBottomOf="@+id/chk2" />
+
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="120dp"
+        android:background="#AEF3F0F0"
+        android:buttonTint="#DA000000"
+        android:checked="false"
+        android:text="Upper Case "
+        android:textColor="#0C0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="332dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="84dp"
+        android:max="30"
+        android:progress="2"
+        android:progressTint="#DA000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seekTest"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:background="#AEF3F0F0"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_generaotr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar"
+        app:layout_constraintVertical_bias="0.113" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
